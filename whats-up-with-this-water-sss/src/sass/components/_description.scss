@@ -1,0 +1,18 @@
+.description-container{
+    display: flex;
+    flex-flow: column nowrap;
+    *{
+        align-self: flex-end;
+    }
+}
+
+.description{
+    height: clamp(100px, 100px, 100px);
+    width: clamp(450px, 450px, 450px);
+    text-align: end;
+    vertical-align: baseline;
+    padding: 0 30px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+}

@@ -1,0 +1,8 @@
+.fixed-container{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: clamp(300px, 300px, 300px);
+    height: clamp(300px, 300px, 300px);
+    overflow-y: auto;
+}

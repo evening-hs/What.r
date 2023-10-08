@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    padding: 30px;
+    gap: 10px;
+
+    * {
+        margin: 0;
+    }
+    h1 {
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+    h2{
+        font-weight: 300;
+    }
+    h3{
+        font-weight: 200;
+    }
+}

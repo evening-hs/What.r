@@ -1,0 +1,15 @@
+.water-container{
+    display: flex;
+    flex-flow: column nowrap;
+    section{
+        font-weight: 300;
+        height: 100%;
+        max-width: 300px;
+        &:last-of-type{
+
+            align-self: self-end;
+            justify-self: self-end;
+    
+        }
+    }
+}

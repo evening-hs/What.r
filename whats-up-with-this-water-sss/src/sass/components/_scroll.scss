@@ -1,0 +1,53 @@
+.scrollbar {
+
+    
+
+    //height: auto;
+    overflow-y: auto;
+    /* Estilos para el scrollbar */
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        /* Ancho del scrollbar */
+        border-radius: 4px;
+
+        background-color: #f5f5f5;
+        /* Color de fondo del scrollbar */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        /* Color del thumb (barra deslizadora) del scrollbar */
+        border-radius: 4px;
+        /* Radio de borde del thumb */
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #999;
+        /* Color del thumb en el estado de hover */
+    }
+
+    &::-webkit-scrollbar-track {
+
+        background-color: #f5f5f5;
+        /* Color de la pista del scrollbar */
+        border-radius: 4px;
+        /* Radio de borde de la pista */
+    }
+
+    &::-webkit-scrollbar-track:hover {
+        background-color: #eee;
+        /* Color de la pista en el estado de hover */
+    }
+
+
+}
+
+.no-overflow {
+    overflow: hidden;
+
+    * {
+
+        overflow: hidden;
+    }
+}

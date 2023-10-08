@@ -1,0 +1,85 @@
+.animal {
+    * {
+        margin: 0;
+    }
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    >* {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: row-reverse;
+    }
+
+    >*:is( :last-child, :first-child) {
+        flex-flow: row;
+        justify-content: flex-end;
+
+    }
+
+    font-weight: 200;
+
+    .name {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        position: relative;
+        overflow: visible;
+
+        h4 {
+            font-weight: 400;
+        }
+
+        .icon-container {
+
+
+            img {
+
+
+                background-color: white;
+                object-fit: fill;
+                object-position: center;
+                border-radius: 15px;
+                transition: all ease-in-out 0.5s;
+                scale: 0;
+
+                width: clamp(300px, 300px, 300px);
+                height: clamp(300px, 300px, 300px);
+
+            }
+
+            .icon {
+                cursor: help;
+
+                &:hover~img {
+                    scale: 1;
+                }
+
+            }
+            
+        }
+    }
+}
+
+.animal-container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: clamp(250px, 250px, 250px);
+    width: clamp(450px, 450px, 450px);
+    padding: 0 10px;
+    > *:not(:last-child){
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+    }
+}
+
+.MuiPopover-paper {
+    height: clamp(100px, 100px, 100px);
+    width: clamp(100px, 100px, 100px);
+    display: grid;
+    place-items: center;
+
+}

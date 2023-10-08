@@ -1,0 +1,10 @@
+.down-nav{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 40px;
+    &:hover{
+        filter: brightness(0.9);
+        cursor: pointer;
+    }
+}

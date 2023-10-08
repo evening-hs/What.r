@@ -1,0 +1,11 @@
+.home{
+    padding: 0 30px;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    >*:hover{
+        padding: 0;
+        filter: brightness(0.9);
+    }
+}
