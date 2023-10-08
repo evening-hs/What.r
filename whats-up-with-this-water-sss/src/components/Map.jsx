@@ -9,7 +9,7 @@ export default function Map({ref = null, width = "100%", height = "100%", setPos
   
   useEffect(() => {
     const loader = new Loader({
-      apiKey: "AIzaSyDLFcrcDKYa5Ofylt5oN5BpoLWocC1XHlw", // Reemplaza con tu clave de API de Google Maps
+      apiKey: "API_KEY", // Reemplaza con tu clave de API de Google Maps
       version: "weekly"
     });
     
